@@ -1,223 +1,1259 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101010">
-  <meta name="description" content="Eleazar M. Franco — Software Developer portfolio, selected projects, technical skills, and experience.">
-  <title>Eleazar M. Franco | Software Developer</title>
-  <link rel="icon" href="assets/images/Logo.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{color-scheme:dark;--bg:#101010;--panel:#171717;--panel2:#1d1d1d;--text:#f3f3f3;--muted:#a5a5a5;--line:#333;--silver:#c6c6c6;--max:1120px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid #eee;outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono,.eyebrow,.tag,.nav-links{font-family:"DM Mono",monospace}.eyebrow{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.silver{color:var(--silver)}.muted{color:var(--muted)}.topbar{position:sticky;top:0;z-index:10;background:rgba(16,16,16,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.09)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.05em;font-size:1.12rem}.brand span{color:#999}.nav-links{display:flex;align-items:center;gap:24px;font-size:.76rem;color:#c2c2c2}.nav-links a:hover{color:white}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #777;padding:11px 16px;font-size:.82rem;font-weight:700;transition:background .2s,color .2s,border-color .2s}.nav-cta:hover,.button:hover{background:#eee;color:#111;border-color:#eee}.hero{padding:100px 0 86px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid #292929;border-radius:50%;right:-150px;top:10px;box-shadow:0 0 0 55px rgba(255,255,255,.012),0 0 0 110px rgba(255,255,255,.01);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.45fr .55fr;gap:70px;align-items:center;position:relative;z-index:1}.hero h1{font-size:clamp(3rem,7vw,6.3rem);letter-spacing:-.085em;line-height:.99;margin:24px 0}.hero h1 span{display:block;color:#9e9e9e}.hero-copy{max-width:640px;color:#b8b8b8;font-size:1.04rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button.primary{background:#eee;color:#111;border-color:#eee}.button.secondary{border-color:#555}.hero-meta{margin-top:42px;display:flex;gap:22px;flex-wrap:wrap;font-size:.78rem;color:#aaa}.hero-meta span{display:flex;align-items:center;gap:8px}.hero-meta i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#bdbdbd}.portrait-frame{width:min(100%,290px);justify-self:end;aspect-ratio:4/5;border:1px solid #4a4a4a;padding:10px;position:relative;background:linear-gradient(145deg,#242424,#111)}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(100%);display:block}.portrait-label{position:absolute;bottom:-16px;left:-24px;background:#eee;color:#111;padding:10px 14px;font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.08em}.section{padding:82px 0;border-top:1px solid #292929}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.065em;margin:9px 0 0}.section-head p{max-width:430px;color:var(--muted);font-size:.9rem;margin:0}.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px}.about-aside{border-left:2px solid #666;padding-left:22px}.about-aside strong{display:block;font-size:1.35rem;line-height:1.3;letter-spacing:-.04em}.about-copy{font-size:1.02rem;color:#c1c1c1;max-width:700px}.about-copy p:first-child{margin-top:0}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill-card{background:var(--panel);border:1px solid #2c2c2c;padding:20px;min-height:148px}.skill-card h3{font-size:.92rem;margin:0 0 12px}.skill-card p{font-size:.8rem;line-height:1.8;color:#aaa;margin:0}.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{background:var(--panel);border:1px solid #2d2d2d;display:flex;flex-direction:column;min-width:0;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-3px);border-color:#777}.project-featured{grid-column:span 2;display:grid;grid-template-columns:.8fr 1.2fr}.project-visual{min-height:200px;background:linear-gradient(145deg,#292929,#121212);border-bottom:1px solid #303030;display:flex;align-items:center;justify-content:center;padding:26px;overflow:hidden}.project-featured .project-visual{border-bottom:0;border-right:1px solid #303030}.project-visual img{max-width:100%;max-height:240px;object-fit:contain;filter:grayscale(100%);opacity:.9}.project-mark{font-family:"DM Mono",monospace;font-size:2.5rem;letter-spacing:-.12em;color:#ddd;border:1px solid #555;padding:22px 26px}.project-body{padding:25px;display:flex;flex-direction:column;align-items:flex-start;flex:1}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:center;width:100%;margin-bottom:12px}.status{font-family:"DM Mono",monospace;font-size:.65rem;letter-spacing:.05em;text-transform:uppercase;border:1px solid #555;padding:4px 8px;color:#ccc;white-space:nowrap}.status.wip{border-style:dashed;color:#aaa}.project h3{font-size:1.28rem;line-height:1.3;letter-spacing:-.04em;margin:0 0 10px}.project p{font-size:.88rem;color:#b3b3b3;margin:0 0 20px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:8px}.tag{font-size:.67rem;color:#c5c5c5;border:1px solid #393939;padding:5px 8px}.project-link{margin-top:20px;font-size:.8rem;font-weight:700;border-bottom:1px solid #888;padding-bottom:3px}.project-link:hover{color:#fff;border-color:#fff}.timeline{display:grid;grid-template-columns:.6fr 1.4fr;border-top:1px solid #333}.timeline-item{display:contents}.timeline-date,.timeline-content{padding:24px 0;border-bottom:1px solid #333}.timeline-date{font-family:"DM Mono",monospace;font-size:.75rem;color:#999}.timeline-content h3{font-size:1.08rem;margin:0 0 5px}.timeline-content p{margin:0;color:#aaa;font-size:.88rem}.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info-card{padding:24px;border:1px solid #333;background:var(--panel)}.info-card h3{margin:0 0 7px;font-size:1rem}.info-card p{margin:0;color:#aaa;font-size:.85rem}.honors{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.honor{border-top:1px solid #777;padding:16px 0}.honor strong{display:block;font-size:.9rem}.honor span{color:#999;font-size:.78rem}.contact-panel{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:36px;border:1px solid #4a4a4a;background:linear-gradient(120deg,#1c1c1c,#131313)}.contact-panel h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.06em;line-height:1.1;margin:10px 0}.contact-panel p{color:#aaa;margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:28px 0;color:#888;font-size:.75rem}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.mobile-menu{display:none}
-    @media(max-width:800px){.wrap{width:min(100% - 32px,var(--max))}.nav-links{gap:12px}.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:none}.hero{padding:72px 0}.hero-grid{grid-template-columns:1fr;gap:42px}.portrait-frame{justify-self:start;width:210px;grid-row:1}.hero:after{right:-280px}.hero h1{font-size:clamp(3.2rem,14vw,5rem)}.section{padding:62px 0}.about-grid{grid-template-columns:1fr;gap:28px}.skill-grid{grid-template-columns:repeat(2,1fr)}.project-featured{grid-column:span 2;grid-template-columns:1fr}.project-featured .project-visual{border-right:0;border-bottom:1px solid #303030}.honors{grid-template-columns:1fr}.contact-panel{align-items:flex-start;flex-direction:column}}
-    @media(max-width:520px){.nav{min-height:62px}.brand{font-size:1rem}.nav-cta{padding:8px 10px;font-size:.72rem}.nav-links{gap:10px;font-size:.7rem}.hero{padding:56px 0}.hero-meta{gap:12px}.section-head{display:block}.section-head p{margin-top:15px}.skill-grid,.projects-grid,.edu-grid{grid-template-columns:1fr}.project-featured{grid-column:auto}.timeline{grid-template-columns:1fr}.timeline-date{padding:20px 0 0;border-bottom:0}.timeline-content{padding:7px 0 22px}.project-body{padding:21px}.contact-panel{padding:24px}}
-    @media print{ :root{color-scheme:light;--bg:#fff;--panel:#fff;--text:#111;--muted:#555;--line:#ddd}body{background:white;color:#111;font-size:10pt}.topbar,.hero-actions,.contact-links,.project-link{display:none!important}.hero,.section{padding:24px 0;border-color:#ddd}.hero:after{display:none}.hero-grid{grid-template-columns:1fr .35fr;gap:25px}.hero h1{font-size:36pt;color:#111}.hero h1 span,.muted,.eyebrow,.hero-copy,.about-copy,.project p,.timeline-content p,.info-card p{color:#444}.portrait-frame{width:130px}.portrait-frame img{filter:grayscale(1)}.section-head h2{font-size:22pt}.skill-grid{grid-template-columns:repeat(4,1fr)}.skill-card,.project,.info-card{background:white;border-color:#ddd;break-inside:avoid}.project-visual{min-height:100px}.project-featured{grid-template-columns:.6fr 1.4fr}.project-visual img{max-height:120px}.tag,.status{color:#333;border-color:#aaa}.projects-grid{gap:8px}.project-body{padding:12px}.project h3{font-size:12pt}.section{break-inside:avoid}.contact-panel{background:white;border-color:#ddd;padding:18px}.contact-panel p{color:#444}.footer{color:#555}}
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101010">
+    <meta name="description"
+        content="Eleazar M. Franco — Software Developer portfolio, selected projects, technical skills, and experience.">
+    <title>Eleazar M. Franco | Software Developer</title>
+    <link rel="icon" href="assets/images/Logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #101010;
+            --panel: #171717;
+            --panel2: #1d1d1d;
+            --text: #f3f3f3;
+            --muted: #a5a5a5;
+            --line: #333;
+            --silver: #c6c6c6;
+            --max: 1120px
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Manrope, system-ui, sans-serif;
+            line-height: 1.7
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #eee;
+            outline-offset: 4px
+        }
+
+        .wrap {
+            width: min(var(--max), calc(100% - 48px));
+            margin: auto
+        }
+
+        .mono,
+        .eyebrow,
+        .tag,
+        .nav-links {
+            font-family: "DM Mono", monospace
+        }
+
+        .eyebrow {
+            font-size: .76rem;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--muted)
+        }
+
+        .silver {
+            color: var(--silver)
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(16, 16, 16, .88);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, .09)
+        }
+
+        .nav {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: -.05em;
+            font-size: 1.12rem
+        }
+
+        .brand span {
+            color: #999
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-size: .76rem;
+            color: #c2c2c2
+        }
+
+        .nav-links a:hover {
+            color: white
+        }
+
+        .nav-cta,
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 1px solid #777;
+            padding: 11px 16px;
+            font-size: .82rem;
+            font-weight: 700;
+            transition: background .2s, color .2s, border-color .2s
+        }
+
+        .nav-cta:hover,
+        .button:hover {
+            background: #eee;
+            color: #111;
+            border-color: #eee
+        }
+
+        .hero {
+            padding: 100px 0 86px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .hero:after {
+            content: "";
+            position: absolute;
+            width: 460px;
+            height: 460px;
+            border: 1px solid #292929;
+            border-radius: 50%;
+            right: -150px;
+            top: 10px;
+            box-shadow: 0 0 0 55px rgba(255, 255, 255, .012), 0 0 0 110px rgba(255, 255, 255, .01);
+            pointer-events: none
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.45fr .55fr;
+            gap: 70px;
+            align-items: center;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 6.3rem);
+            letter-spacing: -.085em;
+            line-height: .99;
+            margin: 24px 0
+        }
+
+        .hero h1 span {
+            display: block;
+            color: #9e9e9e
+        }
+
+        .hero-copy {
+            max-width: 640px;
+            color: #b8b8b8;
+            font-size: 1.04rem
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 28px
+        }
+
+        .button.primary {
+            background: #eee;
+            color: #111;
+            border-color: #eee
+        }
+
+        .button.secondary {
+            border-color: #555
+        }
+
+        .hero-meta {
+            margin-top: 42px;
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+            font-size: .78rem;
+            color: #aaa
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .hero-meta i {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #bdbdbd
+        }
+
+        .portrait-frame {
+            width: min(100%, 290px);
+            justify-self: end;
+            aspect-ratio: 4/5;
+            border: 1px solid #4a4a4a;
+            padding: 10px;
+            position: relative;
+            background: linear-gradient(145deg, #242424, #111)
+        }
+
+        .portrait-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: grayscale(100%);
+            display: block
+        }
+
+        .portrait-label {
+            position: absolute;
+            bottom: -16px;
+            left: -24px;
+            background: #eee;
+            color: #111;
+            padding: 10px 14px;
+            font-family: "DM Mono", monospace;
+            font-size: .7rem;
+            letter-spacing: .08em
+        }
+
+        .section {
+            padding: 82px 0;
+            border-top: 1px solid #292929
+        }
+
+        .section-head {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 24px;
+            margin-bottom: 34px
+        }
+
+        .section-head h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.1;
+            letter-spacing: -.065em;
+            margin: 9px 0 0
+        }
+
+        .section-head p {
+            max-width: 430px;
+            color: var(--muted);
+            font-size: .9rem;
+            margin: 0
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: .7fr 1.3fr;
+            gap: 64px
+        }
+
+        .about-aside {
+            border-left: 2px solid #666;
+            padding-left: 22px
+        }
+
+        .about-aside strong {
+            display: block;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            letter-spacing: -.04em
+        }
+
+        .about-copy {
+            font-size: 1.02rem;
+            color: #c1c1c1;
+            max-width: 700px
+        }
+
+        .about-copy p:first-child {
+            margin-top: 0
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px
+        }
+
+        .skill-card {
+            background: var(--panel);
+            border: 1px solid #2c2c2c;
+            padding: 20px;
+            min-height: 148px
+        }
+
+        .skill-card h3 {
+            font-size: .92rem;
+            margin: 0 0 12px
+        }
+
+        .skill-card p {
+            font-size: .8rem;
+            line-height: 1.8;
+            color: #aaa;
+            margin: 0
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px
+        }
+
+        .project {
+            background: var(--panel);
+            border: 1px solid #2d2d2d;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            transition: transform .2s, border-color .2s
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+            border-color: #777
+        }
+
+        .project-featured {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: .8fr 1.2fr
+        }
+
+        .project-visual {
+            min-height: 200px;
+            background: linear-gradient(145deg, #292929, #121212);
+            border-bottom: 1px solid #303030;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 26px;
+            overflow: hidden
+        }
+
+        .project-featured .project-visual {
+            border-bottom: 0;
+            border-right: 1px solid #303030
+        }
+
+        .project-visual img {
+            max-width: 100%;
+            max-height: 240px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: .9
+        }
+
+        .project-mark {
+            font-family: "DM Mono", monospace;
+            font-size: 2.5rem;
+            letter-spacing: -.12em;
+            color: #ddd;
+            border: 1px solid #555;
+            padding: 22px 26px
+        }
+
+        .project-body {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1
+        }
+
+        .project-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 12px
+        }
+
+        .status {
+            font-family: "DM Mono", monospace;
+            font-size: .65rem;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            border: 1px solid #555;
+            padding: 4px 8px;
+            color: #ccc;
+            white-space: nowrap
+        }
+
+        .status.wip {
+            border-style: dashed;
+            color: #aaa
+        }
+
+        .project h3 {
+            font-size: 1.28rem;
+            line-height: 1.3;
+            letter-spacing: -.04em;
+            margin: 0 0 10px
+        }
+
+        .project p {
+            font-size: .88rem;
+            color: #b3b3b3;
+            margin: 0 0 20px
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: auto;
+            padding-top: 8px
+        }
+
+        .tag {
+            font-size: .67rem;
+            color: #c5c5c5;
+            border: 1px solid #393939;
+            padding: 5px 8px
+        }
+
+        .project-link {
+            margin-top: 20px;
+            font-size: .8rem;
+            font-weight: 700;
+            border-bottom: 1px solid #888;
+            padding-bottom: 3px
+        }
+
+        .project-link:hover {
+            color: #fff;
+            border-color: #fff
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: .6fr 1.4fr;
+            border-top: 1px solid #333
+        }
+
+        .timeline-item {
+            display: contents
+        }
+
+        .timeline-date,
+        .timeline-content {
+            padding: 24px 0;
+            border-bottom: 1px solid #333
+        }
+
+        .timeline-date {
+            font-family: "DM Mono", monospace;
+            font-size: .75rem;
+            color: #999
+        }
+
+        .timeline-content h3 {
+            font-size: 1.08rem;
+            margin: 0 0 5px
+        }
+
+        .timeline-content p {
+            margin: 0;
+            color: #aaa;
+            font-size: .88rem
+        }
+
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px
+        }
+
+        .info-card {
+            padding: 24px;
+            border: 1px solid #333;
+            background: var(--panel)
+        }
+
+        .info-card h3 {
+            margin: 0 0 7px;
+            font-size: 1rem
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #aaa;
+            font-size: .85rem
+        }
+
+        .honors {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px
+        }
+
+        .honor {
+            border-top: 1px solid #777;
+            padding: 16px 0
+        }
+
+        .honor strong {
+            display: block;
+            font-size: .9rem
+        }
+
+        .honor span {
+            color: #999;
+            font-size: .78rem
+        }
+
+        .contact-panel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            padding: 36px;
+            border: 1px solid #4a4a4a;
+            background: linear-gradient(120deg, #1c1c1c, #131313)
+        }
+
+        .contact-panel h2 {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            letter-spacing: -.06em;
+            line-height: 1.1;
+            margin: 10px 0
+        }
+
+        .contact-panel p {
+            color: #aaa;
+            margin: 0
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap
+        }
+
+        .footer {
+            padding: 28px 0;
+            color: #888;
+            font-size: .75rem
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        .mobile-menu {
+            display: none
+        }
+
+        @media(max-width:800px) {
+            .wrap {
+                width: min(100% - 32px, var(--max))
+            }
+
+            .nav-links {
+                gap: 12px
+            }
+
+            .nav-links a:nth-child(2),
+            .nav-links a:nth-child(3) {
+                display: none
+            }
+
+            .hero {
+                padding: 72px 0
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 42px
+            }
+
+            .portrait-frame {
+                justify-self: start;
+                width: 210px;
+                grid-row: 1
+            }
+
+            .hero:after {
+                right: -280px
+            }
+
+            .hero h1 {
+                font-size: clamp(3.2rem, 14vw, 5rem)
+            }
+
+            .section {
+                padding: 62px 0
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 28px
+            }
+
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .project-featured {
+                grid-column: span 2;
+                grid-template-columns: 1fr
+            }
+
+            .project-featured .project-visual {
+                border-right: 0;
+                border-bottom: 1px solid #303030
+            }
+
+            .honors {
+                grid-template-columns: 1fr
+            }
+
+            .contact-panel {
+                align-items: flex-start;
+                flex-direction: column
+            }
+        }
+
+        @media(max-width:520px) {
+            .nav {
+                min-height: 62px
+            }
+
+            .brand {
+                font-size: 1rem
+            }
+
+            .nav-cta {
+                padding: 8px 10px;
+                font-size: .72rem
+            }
+
+            .nav-links {
+                gap: 10px;
+                font-size: .7rem
+            }
+
+            .hero {
+                padding: 56px 0
+            }
+
+            .hero-meta {
+                gap: 12px
+            }
+
+            .section-head {
+                display: block
+            }
+
+            .section-head p {
+                margin-top: 15px
+            }
+
+            .skill-grid,
+            .projects-grid,
+            .edu-grid {
+                grid-template-columns: 1fr
+            }
+
+            .project-featured {
+                grid-column: auto
+            }
+
+            .timeline {
+                grid-template-columns: 1fr
+            }
+
+            .timeline-date {
+                padding: 20px 0 0;
+                border-bottom: 0
+            }
+
+            .timeline-content {
+                padding: 7px 0 22px
+            }
+
+            .project-body {
+                padding: 21px
+            }
+
+            .contact-panel {
+                padding: 24px
+            }
+        }
+
+        @media print {
+            :root {
+                color-scheme: light;
+                --bg: #fff;
+                --panel: #fff;
+                --text: #111;
+                --muted: #555;
+                --line: #ddd
+            }
+
+            body {
+                background: white;
+                color: #111;
+                font-size: 10pt
+            }
+
+            .topbar,
+            .hero-actions,
+            .contact-links,
+            .project-link {
+                display: none !important
+            }
+
+            .hero,
+            .section {
+                padding: 24px 0;
+                border-color: #ddd
+            }
+
+            .hero:after {
+                display: none
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr .35fr;
+                gap: 25px
+            }
+
+            .hero h1 {
+                font-size: 36pt;
+                color: #111
+            }
+
+            .hero h1 span,
+            .muted,
+            .eyebrow,
+            .hero-copy,
+            .about-copy,
+            .project p,
+            .timeline-content p,
+            .info-card p {
+                color: #444
+            }
+
+            .portrait-frame {
+                width: 130px
+            }
+
+            .portrait-frame img {
+                filter: grayscale(1)
+            }
+
+            .section-head h2 {
+                font-size: 22pt
+            }
+
+            .skill-grid {
+                grid-template-columns: repeat(4, 1fr)
+            }
+
+            .skill-card,
+            .project,
+            .info-card {
+                background: white;
+                border-color: #ddd;
+                break-inside: avoid
+            }
+
+            .project-visual {
+                min-height: 100px
+            }
+
+            .project-featured {
+                grid-template-columns: .6fr 1.4fr
+            }
+
+            .project-visual img {
+                max-height: 120px
+            }
+
+            .tag,
+            .status {
+                color: #333;
+                border-color: #aaa
+            }
+
+            .projects-grid {
+                gap: 8px
+            }
+
+            .project-body {
+                padding: 12px
+            }
+
+            .project h3 {
+                font-size: 12pt
+            }
+
+            .section {
+                break-inside: avoid
+            }
+
+            .contact-panel {
+                background: white;
+                border-color: #ddd;
+                padding: 18px
+            }
+
+            .contact-panel p {
+                color: #444
+            }
+
+            .footer {
+                color: #555
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="topbar">
-    <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#home">EF<span>.</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
-      </div>
-      <a class="nav-cta" href="#contact">Get in touch ↗</a>
-    </nav>
-  </header>
+    <header class="topbar">
+        <nav class="nav wrap" aria-label="Main navigation">
+            <a class="brand" href="#home">EF<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
+                    href="#experience">Experience</a>
+            </div>
+            <a class="nav-cta" href="#contact">Get in touch ↗</a>
+        </nav>
+    </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">Software Developer · Portfolio & Resume</div>
-          <h1>Eleazar M.<span>Franco.</span></h1>
-          <p class="hero-copy">I build practical web applications and explore how software, APIs, databases, and local AI can solve real-world problems. I enjoy learning by building—from business systems and payment integrations to personal AI tools.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">Explore projects ↘</a>
-            <button class="button secondary" onclick="window.print()" type="button">Print / Save as PDF ⤓</button>
-          </div>
-          <div class="hero-meta">
-            <span><i></i> Computer Science Graduate</span>
-            <span><i></i> Philippines</span>
-            <span><i></i> Open to opportunities</span>
-          </div>
-        </div>
-        <div class="portrait-frame">
-          <img src="assets/images/Me.JPG" alt="Portrait of Eleazar M. Franco" onerror="this.style.display='none'">
-          <div class="portrait-label">DEVELOPER / BUILDER</div>
-        </div>
-      </div>
-    </section>
+    <main id="home">
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <div class="eyebrow">Software Developer · Portfolio & Resume</div>
+                    <h1>Eleazar M.<span>Franco.</span></h1>
+                    <p class="hero-copy">I build practical web applications and explore how software, APIs, databases,
+                        and local
+                        AI can solve real-world problems. I enjoy learning by building—from business systems and payment
+                        integrations to personal AI tools.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#projects">Explore projects ↘</a>
+                        <button class="button secondary" onclick="window.print()" type="button">Print / Save as PDF
+                            ⤓</button>
+                    </div>
+                    <div class="hero-meta">
+                        <span><i></i> Computer Science Graduate</span>
+                        <span><i></i> Philippines</span>
+                        <span><i></i> Open to opportunities</span>
+                    </div>
+                </div>
+                <div class="portrait-frame">
+                    <img src="assets/images/Me.JPG" alt="Portrait of Eleazar M. Franco"
+                        onerror="this.style.display='none'">
+                    <div class="portrait-label">DEVELOPER / BUILDER</div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="about">
-      <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">01 / Profile</div><h2>Curious by nature.<br>Practical by design.</h2></div><p>A concise introduction to my background, interests, and approach to software development.</p></div>
-        <div class="about-grid">
-          <aside class="about-aside"><strong>From web systems to AI-powered applications.</strong><p class="muted">I learn by building and improving working software.</p></aside>
-          <div class="about-copy">
-            <p>I am a Bachelor of Science in Computer Science graduate from the University of Caloocan City. My portfolio includes academic and practical projects involving web-based management systems, admissions workflows, monitoring systems, and robotics.</p>
-            <p>Recently, I have been expanding my work into native PHP integrations, payment checkout flows, and a personal AI assistant using Java, Spring Boot, and Ollama. I value maintainable code, useful features, and understanding how each part of a system works together.</p>
-            <p class="muted">This portfolio highlights selected projects. Technologies and project status are listed according to the work represented in each repository.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">01 / Profile</div>
+                        <h2>Curious by nature.<br>Practical by design.</h2>
+                    </div>
+                    <p>A concise introduction to my background, interests, and approach to software development.</p>
+                </div>
+                <div class="about-grid">
+                    <aside class="about-aside"><strong>From web systems to AI-powered applications.</strong>
+                        <p class="muted">I learn by building and improving working software.</p>
+                    </aside>
+                    <div class="about-copy">
+                        <p>I am a Bachelor of Science in Computer Science graduate from the University of Caloocan City.
+                            My
+                            portfolio includes academic and practical projects involving web-based management systems,
+                            admissions
+                            workflows, monitoring systems, and robotics.</p>
+                        <p>Recently, I have been expanding my work into native PHP integrations, payment checkout flows,
+                            and a
+                            personal AI assistant using Java, Spring Boot, and Ollama. I value maintainable code, useful
+                            features, and
+                            understanding how each part of a system works together.</p>
+                        <p class="muted">This portfolio highlights selected projects. Technologies and project status
+                            are listed
+                            according to the work represented in each repository.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="skills">
-      <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">02 / Toolkit</div><h2>Technical skills</h2></div><p>A practical overview of the technologies used across my projects. This list can be refined to match your exact confidence level and day-to-day experience.</p></div>
-        <div class="skill-grid">
-          <article class="skill-card"><h3>Languages</h3><p>PHP · Java · JavaScript · HTML · CSS · SQL</p></article>
-          <article class="skill-card"><h3>Frameworks & UI</h3><p>Spring Boot · CodeIgniter · Bootstrap · Responsive UI</p></article>
-          <article class="skill-card"><h3>Data & APIs</h3><p>MySQL / MariaDB · REST APIs · Payment API integration</p></article>
-          <article class="skill-card"><h3>Tools & AI</h3><p>Git · GitHub · XAMPP · Ollama · Local LLM integration</p></article>
-        </div>
-      </div>
-    </section>
+        <section class="section" id="skills">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">02 / Toolkit</div>
+                        <h2>Technical skills</h2>
+                    </div>
+                    <p>A practical overview of the technologies used across my projects. This list can be refined to
+                        match your
+                        exact confidence level and day-to-day experience.</p>
+                </div>
+                <div class="skill-grid">
+                    <article class="skill-card">
+                        <h3>Languages</h3>
+                        <p>PHP · Java · JavaScript · HTML · CSS · SQL</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Frameworks & UI</h3>
+                        <p>Spring Boot · CodeIgniter · Bootstrap · Responsive UI</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Data & APIs</h3>
+                        <p>MySQL / MariaDB · REST APIs · Payment API integration</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Tools & AI</h3>
+                        <p>Git · GitHub · XAMPP · Ollama · Local LLM integration</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="projects">
-      <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">03 / Selected work</div><h2>Projects that solve problems.</h2></div><p>A mix of established portfolio projects and newer builds. Open a repository to explore its source code and implementation details.</p></div>
-        <div class="projects-grid">
-          <article class="project project-featured">
-            <div class="project-visual"><div class="project-mark">AI / ME</div></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Personal project · 01</span><span class="status wip">In development</span></div>
-              <h3>Personal AI Assistant</h3>
-              <p>A Windows-focused personal assistant project exploring conversational AI, persistent memory, and a foundation for future desktop-aware capabilities. Built with Java 25, Spring Boot, and Ollama.</p>
-              <div class="tags"><span class="tag">Java 25</span><span class="tag">Spring Boot</span><span class="tag">Ollama</span><span class="tag">AI</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/personal-ai" target="_blank" rel="noreferrer">View repository ↗</a>
+        <section class="section" id="projects">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">03 / Selected work</div>
+                        <h2>Projects that solve problems.</h2>
+                    </div>
+                    <p>A mix of established portfolio projects and newer builds. Open a repository to explore its source
+                        code and
+                        implementation details.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project project-featured">
+                        <div class="project-visual">
+                            <div class="project-mark">AI / ME</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Personal project · 01</span><span
+                                    class="status wip">In
+                                    development</span></div>
+                            <h3>Personal AI Assistant</h3>
+                            <p>A Windows-focused personal assistant project exploring conversational AI, persistent
+                                memory, and a
+                                foundation for future desktop-aware capabilities. Built with Java 25, Spring Boot, and
+                                Ollama.</p>
+                            <div class="tags"><span class="tag">Java 25</span><span class="tag">Spring Boot</span><span
+                                    class="tag">Ollama</span><span class="tag">AI</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/personal-ai" target="_blank"
+                                rel="noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual">
+                            <div class="project-mark">&lt;/&gt; AI</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">AI integration · 02</span><span
+                                    class="status">Prototype</span></div>
+                            <h3>PHP Inventory AI Chatbot</h3>
+                            <p>A browser-based chatbot concept connecting a native PHP application to a locally hosted
+                                language model,
+                                with the goal of answering questions about inventory and remaining stock.</p>
+                            <div class="tags"><span class="tag">PHP</span><span class="tag">Ollama</span><span
+                                    class="tag">MariaDB</span><span class="tag">XAMPP</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/chatbot" target="_blank"
+                                rel="noreferrer">View
+                                repository ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual">
+                            <div class="project-mark">₱ / API</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Payments · 03</span><span class="status">Test
+                                    integration</span></div>
+                            <h3>Xendit PHP Checkout</h3>
+                            <p>A PHP payment integration experiment using hosted payment flows, GCash, return pages, and
+                                callback
+                                handling in a local development environment.</p>
+                            <div class="tags"><span class="tag">PHP</span><span class="tag">REST API</span><span
+                                    class="tag">GCash</span><span class="tag">MySQL</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/xendit" target="_blank"
+                                rel="noreferrer">View
+                                repository ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual">
+                            <div class="project-mark">PAY / 02</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Payments · 04</span><span
+                                    class="status wip">In
+                                    progress</span></div>
+                            <h3>PayMongo Hosted Checkout</h3>
+                            <p>A follow-on PHP integration project exploring hosted checkout and payment options
+                                including GCash, QR
+                                Ph, Maya, and cards. Implementation details will be added as the project progresses.</p>
+                            <div class="tags"><span class="tag">PHP</span><span class="tag">Checkout API</span><span
+                                    class="tag">Webhooks</span></div>
+                            <span class="muted" style="font-size:.8rem;margin-top:20px">Repository link to be
+                                added</span>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual"><img src="assets/images/UCC-Admission-1.png"
+                                alt="UCC admission system screenshot" onerror="this.style.display='none'"></div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Web application · 05</span><span
+                                    class="status">Portfolio
+                                    project</span></div>
+                            <h3>UCC Freshmen Admission System</h3>
+                            <p>A web-based admission system designed to support administrators and applicants with a
+                                faster, more
+                                transparent way to maintain and review admission records.</p>
+                            <div class="tags"><span class="tag">Web development</span><span class="tag">Database
+                                    systems</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/ucc-admission" target="_blank"
+                                rel="noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual"><img src="assets/images/ASRI-1.jpg"
+                                alt="Assistant Smart Robot Innovation project" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Robotics & IoT · 06</span><span
+                                    class="status">Academic
+                                    project</span></div>
+                            <h3>Assistant Smart Robot Innovation (ASRI)</h3>
+                            <p>A smart robot concept combining room contact tracing, temperature monitoring, alcohol
+                                dispensing,
+                                activity paper checking, and mobility to support daily tasks and sanitation.</p>
+                            <div class="tags"><span class="tag">IoT</span><span class="tag">Monitoring</span><span
+                                    class="tag">Robotics</span></div>
+                            <a class="project-link" href="https://www.facebook.com/assistantsmartrobotinnovation"
+                                target="_blank" rel="noreferrer">View project story ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual"><img src="assets/images/LGTMS-1.png"
+                                alt="Light, gas and temperature monitoring system screenshot"
+                                onerror="this.style.display='none'"></div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Monitoring · 07</span><span
+                                    class="status">Academic
+                                    project</span></div>
+                            <h3>Light, Gas & Temperature Monitoring System</h3>
+                            <p>A sensor-based monitoring system designed to identify potential fire, gas leakage, and
+                                poor-lighting
+                                conditions, with readings made available online.</p>
+                            <div class="tags"><span class="tag">Arduino</span><span class="tag">Sensors</span><span
+                                    class="tag">IoT</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/lgtms" target="_blank"
+                                rel="noreferrer">View
+                                repository ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual"><img src="assets/images/EMS-1.png"
+                                alt="Evaluation Management System screenshot" onerror="this.style.display='none'"></div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Management system · 08</span><span
+                                    class="status">Academic
+                                    project</span></div>
+                            <h3>Evaluation Management System</h3>
+                            <p>A web-based and mobile-oriented evaluation workflow intended to improve student
+                                evaluation, access
+                                control, and processing of academic records.</p>
+                            <div class="tags"><span class="tag">Web application</span><span class="tag">Workflow
+                                    systems</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/evaluation" target="_blank"
+                                rel="noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-visual">
+                            <div class="project-mark">JAVA</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top"><span class="eyebrow">Desktop / Java · 09</span><span
+                                    class="status">Repository</span></div>
+                            <h3>Java CRUD Application</h3>
+                            <p>A Java project demonstrating create, read, update, and delete application workflows.</p>
+                            <div class="tags"><span class="tag">Java</span><span class="tag">CRUD</span></div>
+                            <a class="project-link" href="https://github.com/eleazaaar/crud-java" target="_blank"
+                                rel="noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><div class="project-mark">&lt;/&gt; AI</div></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">AI integration · 02</span><span class="status">Prototype</span></div>
-              <h3>PHP Inventory AI Chatbot</h3>
-              <p>A browser-based chatbot concept connecting a native PHP application to a locally hosted language model, with the goal of answering questions about inventory and remaining stock.</p>
-              <div class="tags"><span class="tag">PHP</span><span class="tag">Ollama</span><span class="tag">MariaDB</span><span class="tag">XAMPP</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/chatbot" target="_blank" rel="noreferrer">View repository ↗</a>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><div class="project-mark">₱ / API</div></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Payments · 03</span><span class="status">Test integration</span></div>
-              <h3>Xendit PHP Checkout</h3>
-              <p>A PHP payment integration experiment using hosted payment flows, GCash, return pages, and callback handling in a local development environment.</p>
-              <div class="tags"><span class="tag">PHP</span><span class="tag">REST API</span><span class="tag">GCash</span><span class="tag">MySQL</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/xendit" target="_blank" rel="noreferrer">View repository ↗</a>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><div class="project-mark">PAY / 02</div></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Payments · 04</span><span class="status wip">In progress</span></div>
-              <h3>PayMongo Hosted Checkout</h3>
-              <p>A follow-on PHP integration project exploring hosted checkout and payment options including GCash, QR Ph, Maya, and cards. Implementation details will be added as the project progresses.</p>
-              <div class="tags"><span class="tag">PHP</span><span class="tag">Checkout API</span><span class="tag">Webhooks</span></div>
-              <span class="muted" style="font-size:.8rem;margin-top:20px">Repository link to be added</span>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><img src="assets/images/UCC-Admission-1.png" alt="UCC admission system screenshot" onerror="this.style.display='none'"></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Web application · 05</span><span class="status">Portfolio project</span></div>
-              <h3>UCC Freshmen Admission System</h3>
-              <p>A web-based admission system designed to support administrators and applicants with a faster, more transparent way to maintain and review admission records.</p>
-              <div class="tags"><span class="tag">Web development</span><span class="tag">Database systems</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/ucc-admission" target="_blank" rel="noreferrer">View repository ↗</a>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><img src="assets/images/ASRI-1.jpg" alt="Assistant Smart Robot Innovation project" onerror="this.style.display='none'"></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Robotics & IoT · 06</span><span class="status">Academic project</span></div>
-              <h3>Assistant Smart Robot Innovation (ASRI)</h3>
-              <p>A smart robot concept combining room contact tracing, temperature monitoring, alcohol dispensing, activity paper checking, and mobility to support daily tasks and sanitation.</p>
-              <div class="tags"><span class="tag">IoT</span><span class="tag">Monitoring</span><span class="tag">Robotics</span></div>
-              <a class="project-link" href="https://www.facebook.com/assistantsmartrobotinnovation" target="_blank" rel="noreferrer">View project story ↗</a>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><img src="assets/images/LGTMS-1.png" alt="Light, gas and temperature monitoring system screenshot" onerror="this.style.display='none'"></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Monitoring · 07</span><span class="status">Academic project</span></div>
-              <h3>Light, Gas & Temperature Monitoring System</h3>
-              <p>A sensor-based monitoring system designed to identify potential fire, gas leakage, and poor-lighting conditions, with readings made available online.</p>
-              <div class="tags"><span class="tag">Arduino</span><span class="tag">Sensors</span><span class="tag">IoT</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/lgtms" target="_blank" rel="noreferrer">View repository ↗</a>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><img src="assets/images/EMS-1.png" alt="Evaluation Management System screenshot" onerror="this.style.display='none'"></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Management system · 08</span><span class="status">Academic project</span></div>
-              <h3>Evaluation Management System</h3>
-              <p>A web-based and mobile-oriented evaluation workflow intended to improve student evaluation, access control, and processing of academic records.</p>
-              <div class="tags"><span class="tag">Web application</span><span class="tag">Workflow systems</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/evaluation" target="_blank" rel="noreferrer">View repository ↗</a>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual"><div class="project-mark">JAVA</div></div>
-            <div class="project-body">
-              <div class="project-top"><span class="eyebrow">Desktop / Java · 09</span><span class="status">Repository</span></div>
-              <h3>Java CRUD Application</h3>
-              <p>A Java project demonstrating create, read, update, and delete application workflows.</p>
-              <div class="tags"><span class="tag">Java</span><span class="tag">CRUD</span></div>
-              <a class="project-link" href="https://github.com/eleazaaar/crud-java" target="_blank" rel="noreferrer">View repository ↗</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="section" id="experience">
-      <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">04 / Background</div><h2>Experience & learning.</h2></div><p>This section keeps the profile honest while leaving room to add exact job titles, dates, and responsibilities.</p></div>
-        <div class="timeline">
-          <div class="timeline-item"><div class="timeline-date">Professional</div><div class="timeline-content"><h3>Software development</h3><p>Experience building and maintaining web-based systems and working with application workflows, APIs, and databases. Specific employer, job title, dates, and achievements should be confirmed before this is used as a formal job-history entry.</p></div></div>
-          <div class="timeline-item"><div class="timeline-date">Education</div><div class="timeline-content"><h3>Bachelor of Science in Computer Science</h3><p>University of Caloocan City · Graduate</p></div></div>
-          <div class="timeline-item"><div class="timeline-date">January 2023</div><div class="timeline-content"><h3>Java Programming (NC III)</h3><p>Training / certification item listed in the original portfolio.</p></div></div>
-          <div class="timeline-item"><div class="timeline-date">April 2022</div><div class="timeline-content"><h3>2nd Place — CSD Interskills Java Programming Category</h3><p>Java programming competition during CSD Week.</p></div></div>
-          <div class="timeline-item"><div class="timeline-date">March 2023</div><div class="timeline-content"><h3>Introduction to IoT seminar</h3><p>Conducted a seminar introducing Internet of Things concepts.</p></div></div>
-        </div>
-      </div>
-    </section>
+        <section class="section" id="experience">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">04 / Background</div>
+                        <h2>Experience & learning.</h2>
+                    </div>
+                    <p>This section keeps the profile honest while leaving room to add exact job titles, dates, and
+                        responsibilities.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Professional</div>
+                        <div class="timeline-content">
+                            <h3>Software development</h3>
+                            <p>Experience building and maintaining web-based systems and working with application
+                                workflows, APIs, and
+                                databases. Specific employer, job title, dates, and achievements should be confirmed
+                                before this is used
+                                as a formal job-history entry.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Education</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <p>University of Caloocan City · Graduate</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">January 2023</div>
+                        <div class="timeline-content">
+                            <h3>Java Programming (NC III)</h3>
+                            <p>Training / certification item listed in the original portfolio.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">April 2022</div>
+                        <div class="timeline-content">
+                            <h3>2nd Place — CSD Interskills Java Programming Category</h3>
+                            <p>Java programming competition during CSD Week.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 2023</div>
+                        <div class="timeline-content">
+                            <h3>Introduction to IoT seminar</h3>
+                            <p>Conducted a seminar introducing Internet of Things concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="activities">
-      <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">05 / Continued learning</div><h2>Activities & seminars.</h2></div><p>Selected training and seminar topics retained from the original portfolio.</p></div>
-        <div class="edu-grid">
-          <article class="info-card"><h3>Artificial Intelligence</h3><p>Seminar attendance · April 2023</p></article>
-          <article class="info-card"><h3>Essentials of Cybersecurity</h3><p>Seminar attendance · April 2023</p></article>
-          <article class="info-card"><h3>Design Patterns using Java Technology</h3><p>Seminar attendance · April 2023</p></article>
-          <article class="info-card"><h3>MVC Architectural Pattern using Laravel</h3><p>Seminar attendance · March 2023</p></article>
-          <article class="info-card"><h3>Progressive Web Apps & ChatGPT for Programming</h3><p>Seminars / webinars · March 2023</p></article>
-          <article class="info-card"><h3>IoT, Smart Home Automation, Bootstrap 5, Vue.js & Augmented Reality</h3><p>Seminars / webinars · 2020–2023</p></article>
-        </div>
-      </div>
-    </section>
+        <section class="section" id="activities">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">05 / Continued learning</div>
+                        <h2>Activities & seminars.</h2>
+                    </div>
+                    <p>Selected training and seminar topics retained from the original portfolio.</p>
+                </div>
+                <div class="edu-grid">
+                    <article class="info-card">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Seminar attendance · April 2023</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Essentials of Cybersecurity</h3>
+                        <p>Seminar attendance · April 2023</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Design Patterns using Java Technology</h3>
+                        <p>Seminar attendance · April 2023</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>MVC Architectural Pattern using Laravel</h3>
+                        <p>Seminar attendance · March 2023</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Progressive Web Apps & ChatGPT for Programming</h3>
+                        <p>Seminars / webinars · March 2023</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>IoT, Smart Home Automation, Bootstrap 5, Vue.js & Augmented Reality</h3>
+                        <p>Seminars / webinars · 2020–2023</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="contact">
-      <div class="wrap">
-        <div class="contact-panel">
-          <div><div class="eyebrow">06 / Contact</div><h2>Let's build something useful.</h2><p>For opportunities, collaborations, or a conversation about software development.</p></div>
-          <div class="contact-links">
-            <a class="button primary" href="mailto:eleazarmfranco@gmail.com">Email me ↗</a>
-            <a class="button secondary" href="https://github.com/eleazaaar" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/eleazaaar/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> Eleazar M. Franco</span><span class="mono">Designed in black & silver · Built for the web</span><a href="#home">Back to top ↑</a></div></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        <section class="section" id="contact">
+            <div class="wrap">
+                <div class="contact-panel">
+                    <div>
+                        <div class="eyebrow">06 / Contact</div>
+                        <h2>Let's build something useful.</h2>
+                        <p>For opportunities, collaborations, or a conversation about software development.</p>
+                    </div>
+                    <div class="contact-links">
+                        <a class="button primary" href="mailto:eleazarmfranco@gmail.com">Email me ↗</a>
+                        <a class="button secondary" href="https://github.com/eleazaaar" target="_blank"
+                            rel="noreferrer">GitHub
+                            ↗</a>
+                        <a class="button secondary" href="https://www.linkedin.com/in/eleazaaar/" target="_blank"
+                            rel="noreferrer">LinkedIn ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap footer-row"><span>© <span id="year"></span> Eleazar M. Franco</span><span class="mono">Designed
+                in
+                black & silver · Built for the web</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
